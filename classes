@@ -1,0 +1,12 @@
+class student:
+        def __init__(self,first_name,last_name,age):
+            self.first_name = first_name
+            self.last_name = last_name
+            self.age = age
+            self.email = first_name + "." + last_name + "@school.com"
+
+        def fullname(self):
+            return '{} {}' .format(self.first_name, self.last_name)
+        
+user = student('Denise','Goldberg',19)
+print(user.fullname())
